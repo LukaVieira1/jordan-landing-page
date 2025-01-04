@@ -1,24 +1,24 @@
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-secondary-50">
       {/* Hero/About Me */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-section-lg">
+        <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl font-bold mb-6">
+            <h1 className="text-heading-1 font-bold mb-6">
               Especialista em Gestão de Oficinas Automotivas
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <h3 className="text-2xl font-bold">+5 Anos</h3>
+              <div className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm">
+                <h3 className="text-heading-3 font-bold">+5 Anos</h3>
                 <p>De graduação e experiência no setor automotivo</p>
               </div>
-              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <h3 className="text-2xl font-bold">+30</h3>
+              <div className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm">
+                <h3 className="text-heading-3 font-bold">+30</h3>
                 <p>Certificados e especializações na área</p>
               </div>
-              <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                <h3 className="text-2xl font-bold">+30M</h3>
+              <div className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm">
+                <h3 className="text-heading-3 font-bold">+30M</h3>
                 <p>Em resultados para oficinas parceiras</p>
               </div>
             </div>
@@ -27,39 +27,43 @@ function App() {
       </section>
 
       {/* Product Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">
+      <section className="py-section bg-white">
+        <div className="container">
+          <h2 className="text-heading-2 font-bold text-center mb-12">
             Quer abrir sua oficina e crescer seu negócio?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold mb-4 text-blue-600">E-book</h3>
-              <p className="mb-6">
+            <div className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
+                E-book
+              </h3>
+              <p className="text-body-lg mb-6">
                 Aprenda os fundamentos essenciais para gerir uma oficina de
                 sucesso
               </p>
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
                 Quero o E-book
               </button>
             </div>
-            <div className="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold mb-4 text-blue-600">
+            <div className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
                 Curso Online
               </h3>
-              <p className="mb-6">
+              <p className="text-body-lg mb-6">
                 Treinamento completo com todas as estratégias práticas
               </p>
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
                 Quero o Curso
               </button>
             </div>
-            <div className="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold mb-4 text-blue-600">
+            <div className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
                 Combo Completo
               </h3>
-              <p className="mb-6">E-book + Curso com condições especiais</p>
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <p className="text-body-lg mb-6">
+                E-book + Curso com condições especiais
+              </p>
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
                 Quero o Combo
               </button>
             </div>
@@ -67,49 +71,51 @@ function App() {
         </div>
       </section>
 
-      {/* Mentoria Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-4xl font-bold mb-8">Mentoria Personalizada</h2>
-          <p className="text-xl mb-8">
+      {/* Mentoring Section */}
+      <section className="py-section bg-secondary-50">
+        <div className="container text-center">
+          <h2 className="text-heading-2 font-bold mb-8">
+            Mentoria Personalizada
+          </h2>
+          <p className="text-body-lg mb-8">
             Quer acelerar seus resultados com um acompanhamento exclusivo? Na
             mentoria, trabalharemos juntos para implementar estratégias
             comprovadas e adaptadas à realidade do seu negócio. Transforme sua
             oficina com quem já ajudou dezenas de empresários a alcançarem o
             sucesso.
           </p>
-          <button className="bg-blue-600 text-white py-4 px-8 rounded-lg text-xl hover:bg-blue-700 transition-colors">
+          <button className="bg-primary-600 text-white py-4 px-8 rounded-lg text-body-lg hover:bg-primary-700 transition-colors">
             Quero fazer parte da Mentoria
           </button>
         </div>
       </section>
 
       {/* Results Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12">
+      <section className="py-section bg-white">
+        <div className="container">
+          <h2 className="text-heading-2 font-bold text-center mb-12">
             O Que Você Vai Conquistar
           </h2>
-          <div className="bg-gray-50 p-8 rounded-xl shadow-lg">
+          <div className="bg-secondary-50 p-8 rounded-card">
             <ul className="space-y-4">
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">✓</span>
+                <span className="text-primary-600 mr-2">✓</span>
                 Domínio completo da gestão financeira da sua oficina
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">✓</span>
+                <span className="text-primary-600 mr-2">✓</span>
                 Estratégias comprovadas de marketing e captação de clientes
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">✓</span>
+                <span className="text-primary-600 mr-2">✓</span>
                 Sistemas eficientes de gestão de equipe e processos
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">✓</span>
+                <span className="text-primary-600 mr-2">✓</span>
                 Planejamento estratégico para crescimento sustentável
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">✓</span>
+                <span className="text-primary-600 mr-2">✓</span>
                 Métodos para aumentar a rentabilidade e reduzir custos
               </li>
             </ul>
@@ -118,15 +124,15 @@ function App() {
       </section>
 
       {/* Social Media Section */}
-      <section className="py-16 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8">
+      <section className="py-section bg-secondary-900 text-white">
+        <div className="container text-center">
+          <h2 className="text-heading-2 font-bold mb-8">
             Me acompanhe nas redes sociais
           </h2>
           <div className="flex justify-center space-x-8">
             <a
               href="https://instagram.com/seu-perfil"
-              className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-purple-600 to-pink-600 hover:scale-110 transition-transform"
+              className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-primary-500 to-primary-700 hover:scale-110 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -137,7 +143,7 @@ function App() {
 
             <a
               href="https://youtube.com/seu-canal"
-              className="flex items-center justify-center w-14 h-14 rounded-full bg-red-600 hover:scale-110 transition-transform"
+              className="flex items-center justify-center w-14 h-14 rounded-full bg-error hover:scale-110 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -148,7 +154,7 @@ function App() {
 
             <a
               href="https://linkedin.com/in/seu-perfil"
-              className="flex items-center justify-center w-14 h-14 rounded-full bg-blue-600 hover:scale-110 transition-transform"
+              className="flex items-center justify-center w-14 h-14 rounded-full bg-primary-600 hover:scale-110 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -159,7 +165,7 @@ function App() {
 
             <a
               href="https://wa.me/seu-numero"
-              className="flex items-center justify-center w-14 h-14 rounded-full bg-green-600 hover:scale-110 transition-transform"
+              className="flex items-center justify-center w-14 h-14 rounded-full bg-success hover:scale-110 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
             >
