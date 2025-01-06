@@ -13,3 +13,19 @@
 - Added fade-in-up animation
 - Added stagger animation
 - Added scale-in animation
+
+## 0.3.0 - 2025-01-06
+
+## added
+
+- Whats app floating button
+- photo to result section
+
+## fixed
+
+- product section spacing
+
+## improved
+
+- result points section
+- animations export
