@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeInUp, stagger, scaleIn } from "./utils/animations";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   const learningPoints = [
@@ -312,6 +313,18 @@ function App() {
           </motion.div>
         </div>
       </section>
+      <FloatingWhatsApp
+        phoneNumber="5399471393"
+        accountName="Consultoria Jordan"
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+        avatar="jordan-profile.png"
+        chatMessage="Olá, nos diga o que você precisa! Ficaremos felizes em te ajudar!"
+        statusMessage="Normalmente responde em minutos"
+        placeholder="Digite uma mensagem"
+      />
     </main>
   );
 }
