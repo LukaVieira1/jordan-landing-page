@@ -2,6 +2,18 @@ import { motion } from "framer-motion";
 import { fadeInUp, stagger, scaleIn } from "./utils/animations";
 
 function App() {
+  const learningPoints = [
+    "Como abrir seu CNPJ",
+    "Investimento inicial e dicas financeiras",
+    "Como captar clientes e estratégias de vendas",
+    "Gestão completa da oficina e processos",
+    "Contratação e gestão de equipe",
+    "Gestão de compras e fornecedores",
+    "Controle de estoque eficiente",
+    "Precificação estratégica de mão de obra e peças",
+    "Reinvestimento e pro-labore",
+  ];
+
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero/About Me */}
@@ -209,46 +221,16 @@ function App() {
                   viewport={{ once: true }}
                 >
                   <ul className="space-y-4">
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>A escolher
-                      o melhor local para sua oficina
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Como abrir seu CNPJ
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Investimento inicial e dicas financeiras
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Como captar clientes e estratégias de vendas
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Gestão completa da oficina e processos
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Contratação e gestão de equipe
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Gestão de compras e fornecedores
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Controle de estoque eficiente
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Precificação estratégica de mão de obra e peças
-                    </motion.li>
-                    <motion.li variants={stagger} className="flex items-start">
-                      <span className="text-primary-600 mr-2">✓</span>
-                      Reinvestimento e pro-labore
-                    </motion.li>
+                    {learningPoints.map((point, index) => (
+                      <motion.li
+                        variants={stagger}
+                        className="flex items-start"
+                        key={index}
+                      >
+                        <span className="text-primary-600 mr-2">✓</span>
+                        {point}
+                      </motion.li>
+                    ))}
                   </ul>
                 </motion.div>
               </div>
