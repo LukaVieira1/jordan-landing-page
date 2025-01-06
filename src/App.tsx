@@ -103,15 +103,17 @@ function App() {
             <motion.div
               variants={stagger}
               whileHover={{ y: -10 }}
-              className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between"
             >
-              <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
-                E-book
-              </h3>
-              <p className="text-body-lg mb-6">
-                Aprenda os fundamentos essenciais para gerir uma oficina de
-                sucesso
-              </p>
+              <div className="">
+                <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
+                  E-book
+                </h3>
+                <p className="text-body-lg mb-6">
+                  Todo o conhecimento aplicado em um guia prático, onde você
+                  poderá acessar a qualquer momento e lugar.
+                </p>
+              </div>
               <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
                 Quero o E-book
               </button>
@@ -119,14 +121,18 @@ function App() {
             <motion.div
               variants={stagger}
               whileHover={{ y: -10 }}
-              className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between"
             >
-              <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
-                Curso Online
-              </h3>
-              <p className="text-body-lg mb-6">
-                Treinamento completo com todas as estratégias práticas
-              </p>
+              <div className="">
+                <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
+                  Curso Online
+                </h3>
+                <p className="text-body-lg mb-6">
+                  Aqui você encontrará tudo que é necessário para a abertura da
+                  sua oficina, e para transformá-lo em uma máquina de sucesso,
+                  com exemplos práticos e aplicáveis.
+                </p>
+              </div>
               <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
                 Quero o Curso
               </button>
@@ -134,14 +140,16 @@ function App() {
             <motion.div
               variants={stagger}
               whileHover={{ y: -10 }}
-              className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-secondary-50 p-6 rounded-card shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between"
             >
-              <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
-                Combo Completo
-              </h3>
-              <p className="text-body-lg mb-6">
-                E-book + Curso com condições especiais
-              </p>
+              <div className="">
+                <h3 className="text-heading-3 font-bold mb-4 text-primary-600">
+                  Combo Completo
+                </h3>
+                <p className="text-body-lg mb-6">
+                  E-book + Curso com condições especiais
+                </p>
+              </div>
               <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
                 Quero o Combo
               </button>
@@ -163,11 +171,9 @@ function App() {
               Mentoria Personalizada
             </h2>
             <p className="text-body-lg mb-8">
-              Quer acelerar seus resultados com um acompanhamento exclusivo? Na
-              mentoria, trabalharemos juntos para implementar estratégias
-              comprovadas e adaptadas à realidade do seu negócio. Transforme sua
-              oficina com quem já ajudou dezenas de empresários a alcançarem o
-              sucesso.
+              Acesso particular comigo, onde conversamos sobre a sua realidade,
+              onde vamos aplicar o conhecimento, em prática para o seu negócio,
+              com acompanhamento exclusivo, por whatsapp a qualquer momento.
             </p>
             <motion.button
               className="bg-primary-600 text-white py-4 px-8 rounded-lg text-body-lg hover:bg-primary-700 transition-colors"
