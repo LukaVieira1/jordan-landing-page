@@ -23,19 +23,38 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-secondary-50">
+    <main className="min-h-screen bg-gray-50">
       {/* Hero/About Me */}
       <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-section-lg">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <motion.h1
-              className="text-heading-1 font-bold mb-6"
+            <motion.span
+              className="block text-primary-100 text-xl mb-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
+              Jordan Auto Consultoria
+            </motion.span>
+
+            <motion.h1
+              className="text-heading-1 font-bold mb-4"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
               Especialista em Gestão de Oficinas Automotivas
             </motion.h1>
+
+            <motion.p
+              className="text-heading-3 mb-12 text-primary-100"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Transformando sua oficina em uma máquina de sucesso.
+            </motion.p>
+
             <motion.div
               className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
               variants={stagger}
@@ -79,7 +98,7 @@ function App() {
             whileInView="whileInView"
             viewport={{ once: true }}
           >
-            Quer abrir sua oficina e crescer seu negócio?
+            Quer abrir sua oficina e alcançar o sucesso?
           </motion.h2>
           <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
@@ -171,44 +190,89 @@ function App() {
       {/* Results Section */}
       <section className="py-section bg-white">
         <div className="container">
-          <motion.h2
-            className="text-heading-2 font-bold text-center mb-12"
+          <motion.div
+            className="max-w-7xl mx-auto"
             variants={fadeInUp}
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true }}
           >
-            O Que Você Vai Conquistar
-          </motion.h2>
-          <motion.div
-            className="bg-secondary-50 p-8 rounded-card"
-            variants={stagger}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true }}
-          >
-            <ul className="space-y-4">
-              <motion.li variants={stagger} className="flex items-start">
-                <span className="text-primary-600 mr-2">✓</span>
-                Domínio completo da gestão financeira da sua oficina
-              </motion.li>
-              <motion.li variants={stagger} className="flex items-start">
-                <span className="text-primary-600 mr-2">✓</span>
-                Estratégias comprovadas de marketing e captação de clientes
-              </motion.li>
-              <motion.li variants={stagger} className="flex items-start">
-                <span className="text-primary-600 mr-2">✓</span>
-                Sistemas eficientes de gestão de equipe e processos
-              </motion.li>
-              <motion.li variants={stagger} className="flex items-start">
-                <span className="text-primary-600 mr-2">✓</span>
-                Planejamento estratégico para crescimento sustentável
-              </motion.li>
-              <motion.li variants={stagger} className="flex items-start">
-                <span className="text-primary-600 mr-2">✓</span>
-                Métodos para aumentar a rentabilidade e reduzir custos
-              </motion.li>
-            </ul>
+            <h2 className="text-heading-2 font-bold text-center mb-12">
+              Sobre o seu professor
+            </h2>
+
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16">
+              <motion.div
+                className="w-full md:w-2/5 relative"
+                variants={scaleIn}
+              >
+                <div className="absolute inset-0 bg-gradient-to-b from-primary-500/10 to-transparent rounded-3xl -z-10" />
+                <img
+                  src="/jordan-pic.png"
+                  alt="Foto profissional em traje social"
+                  className="w-full h-full object-contain md:scale-110 md:-translate-y-6"
+                />
+              </motion.div>
+
+              <div className="w-full md:w-3/5">
+                <motion.h4
+                  className="text-heading-4 font-bold mb-6 text-primary-800"
+                  variants={fadeInUp}
+                >
+                  O que você vai aprender comigo:
+                </motion.h4>
+                <motion.div
+                  className="bg-secondary-50 p-6 rounded-card shadow-lg"
+                  variants={stagger}
+                  initial="initial"
+                  whileInView="whileInView"
+                  viewport={{ once: true }}
+                >
+                  <ul className="space-y-4">
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>A escolher
+                      o melhor local para sua oficina
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Como abrir seu CNPJ
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Investimento inicial e dicas financeiras
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Como captar clientes e estratégias de vendas
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Gestão completa da oficina e processos
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Contratação e gestão de equipe
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Gestão de compras e fornecedores
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Controle de estoque eficiente
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Precificação estratégica de mão de obra e peças
+                    </motion.li>
+                    <motion.li variants={stagger} className="flex items-start">
+                      <span className="text-primary-600 mr-2">✓</span>
+                      Reinvestimento e pro-labore
+                    </motion.li>
+                  </ul>
+                </motion.div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -286,7 +350,7 @@ function App() {
           </motion.div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
 
