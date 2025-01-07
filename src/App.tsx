@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeInUp, stagger, scaleIn } from "./utils/animations";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { Button } from "./components/Button";
 
 function App() {
   const learningPoints = [
@@ -189,9 +190,15 @@ function App() {
                   poderá acessar a qualquer momento e lugar.
                 </p>
               </div>
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
+              <Button
+                variant="primary"
+                fullWidth
+                onClick={() =>
+                  window.open("https://seu-link-do-ebook.com", "_blank")
+                }
+              >
                 Quero o E-book
-              </button>
+              </Button>
             </motion.div>
             <motion.div
               variants={stagger}
@@ -208,9 +215,15 @@ function App() {
                   com exemplos práticos e aplicáveis.
                 </p>
               </div>
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
+              <Button
+                variant="primary"
+                fullWidth
+                onClick={() =>
+                  window.open("https://seu-link-do-curso.com", "_blank")
+                }
+              >
                 Quero o Curso
-              </button>
+              </Button>
             </motion.div>
             <motion.div
               variants={stagger}
@@ -227,9 +240,15 @@ function App() {
                   comunicação comigo, de forma exclusiva.
                 </p>
               </div>
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
+              <Button
+                variant="primary"
+                fullWidth
+                onClick={() =>
+                  window.open("https://seu-link-do-combo.com", "_blank")
+                }
+              >
                 Quero o Combo
-              </button>
+              </Button>
             </motion.div>
           </motion.div>
         </div>
@@ -252,13 +271,15 @@ function App() {
               onde vamos aplicar o conhecimento, em prática para o seu negócio,
               com acompanhamento exclusivo, por whatsapp a qualquer momento.
             </p>
-            <motion.button
-              className="bg-primary-600 text-white py-4 px-8 rounded-lg text-body-lg hover:bg-primary-700 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={() =>
+                window.open("https://wa.me/5553999472393", "_blank")
+              }
             >
               Quero fazer parte da Mentoria
-            </motion.button>
+            </Button>
           </motion.div>
         </div>
       </section>
