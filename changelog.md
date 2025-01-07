@@ -29,3 +29,11 @@
 
 - result points section
 - animations export
+
+## 0.4.0 - 2025-01-07
+
+## Improved
+
+- About section
+- result points section
+- Created Button component
