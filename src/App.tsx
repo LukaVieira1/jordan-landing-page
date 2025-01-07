@@ -110,48 +110,54 @@ function App() {
       <section className="py-section bg-white">
         <div className="container">
           <motion.div
-            className="max-w-7xl mx-auto"
+            className="max-w-4xl mx-auto"
             variants={fadeInUp}
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true }}
           >
-            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16">
-              <div className="w-full md:w-3/5">
-                <motion.h4
-                  className="text-heading-4 font-bold mb-6 text-primary-800"
-                  variants={fadeInUp}
-                >
-                  O que você vai aprender comigo:
-                </motion.h4>
+            <motion.h2
+              className="text-heading-2 font-bold text-center mb-4 text-primary-800"
+              variants={fadeInUp}
+            >
+              O que você vai aprender comigo
+            </motion.h2>
+            <motion.p
+              className="text-lg text-center mb-12 text-gray-600"
+              variants={fadeInUp}
+            >
+              Conheça o passo a passo completo para abrir e gerir sua oficina
+              com sucesso
+            </motion.p>
+
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              variants={stagger}
+              initial="initial"
+              whileInView="whileInView"
+              viewport={{ once: true }}
+            >
+              {learningPoints.map((point, index) => (
                 <motion.div
-                  className="bg-secondary-50 p-6 rounded-card shadow-lg"
+                  key={index}
                   variants={stagger}
-                  initial="initial"
-                  whileInView="whileInView"
-                  viewport={{ once: true }}
+                  className="bg-secondary-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <ul className="space-y-4">
-                    {learningPoints.map((point, index) => (
-                      <motion.li
-                        variants={stagger}
-                        className="flex items-start"
-                        key={index}
-                      >
-                        <span className="text-primary-600 mr-2">✓</span>
-                        {point}
-                      </motion.li>
-                    ))}
-                  </ul>
+                  <div className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center">
+                      ✓
+                    </span>
+                    <p className="text-gray-700 text-lg">{point}</p>
+                  </div>
                 </motion.div>
-              </div>
-            </div>
+              ))}
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* Product Section */}
-      <section className="py-section bg-white">
+      <section className="py-section bg-secondary-50">
         <div className="container">
           <motion.h2
             className="text-heading-2 font-bold text-center mb-12"
@@ -228,7 +234,7 @@ function App() {
       </section>
 
       {/* Mentoring Section */}
-      <section className="py-section bg-secondary-50">
+      <section className="py-section bg-white">
         <div className="container text-center">
           <motion.div
             variants={scaleIn}
