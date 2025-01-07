@@ -18,66 +18,135 @@ function App() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero/About Me */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-section-lg">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <motion.span
-              className="block text-primary-100 text-xl mb-4"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Jordan Auto Consultoria
-            </motion.span>
+      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-section-lg relative overflow-hidden">
+        {/* Mobile Image */}
+        <div className="absolute inset-0 md:hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-600/90 to-primary-800/90 z-10" />
+          <img
+            src="/jordan-pic.png"
+            alt="Background"
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
 
-            <motion.h1
-              className="text-heading-1 font-bold mb-4"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-            >
-              Especialista em Gestão de Oficinas Automotivas
-            </motion.h1>
-
-            <motion.p
-              className="text-heading-3 mb-12 text-primary-100"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Transformando sua oficina em uma máquina de sucesso.
-            </motion.p>
-
+        <div className="container relative z-20">
+          <div className="flex flex-col md:flex-row items-center gap-8 max-w-7xl mx-auto">
+            {/* Desktop Image */}
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
-              variants={stagger}
-              initial="initial"
-              whileInView="whileInView"
-              viewport={{ once: true }}
+              className="hidden md:block w-full md:w-2/5"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <motion.div
-                variants={stagger}
-                className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm"
-              >
-                <h3 className="text-heading-3 font-bold">+5 Anos</h3>
-                <p>De graduação e experiência no setor automotivo</p>
-              </motion.div>
-              <motion.div
-                variants={stagger}
-                className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm"
-              >
-                <h3 className="text-heading-3 font-bold">+30</h3>
-                <p>Certificados e especializações na área</p>
-              </motion.div>
-              <motion.div
-                variants={stagger}
-                className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm"
-              >
-                <h3 className="text-heading-3 font-bold">+30M</h3>
-                <p>Em resultados para oficinas parceiras</p>
-              </motion.div>
+              <img
+                src="/provisoring-low-quality.png"
+                alt="Jordan"
+                className="w-full h-auto max-w-md mx-auto"
+              />
             </motion.div>
+            <div className="w-full md:w-3/5">
+              <motion.span
+                className="block text-primary-100 text-xl mb-4"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                Jordan Auto Consultoria
+              </motion.span>
+
+              <motion.h1
+                className="text-heading-1 font-bold mb-4"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+              >
+                Especialista em Gestão de Oficinas Automotivas
+              </motion.h1>
+
+              <motion.p
+                className="text-heading-3 mb-12 text-primary-100"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                Transformando sua oficina em uma máquina de sucesso.
+              </motion.p>
+
+              <motion.div
+                className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                variants={stagger}
+                initial="initial"
+                whileInView="whileInView"
+                viewport={{ once: true }}
+              >
+                <motion.div
+                  variants={stagger}
+                  className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm"
+                >
+                  <h3 className="text-heading-3 font-bold">+5 Anos</h3>
+                  <p>De graduação e experiência no setor automotivo</p>
+                </motion.div>
+                <motion.div
+                  variants={stagger}
+                  className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm"
+                >
+                  <h3 className="text-heading-3 font-bold">+30</h3>
+                  <p>Certificados e especializações na área</p>
+                </motion.div>
+                <motion.div
+                  variants={stagger}
+                  className="bg-primary-400/10 p-6 rounded-lg backdrop-blur-sm"
+                >
+                  <h3 className="text-heading-3 font-bold">+30M</h3>
+                  <p>Em resultados para oficinas parceiras</p>
+                </motion.div>
+              </motion.div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section className="py-section bg-white">
+        <div className="container">
+          <motion.div
+            className="max-w-7xl mx-auto"
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16">
+              <div className="w-full md:w-3/5">
+                <motion.h4
+                  className="text-heading-4 font-bold mb-6 text-primary-800"
+                  variants={fadeInUp}
+                >
+                  O que você vai aprender comigo:
+                </motion.h4>
+                <motion.div
+                  className="bg-secondary-50 p-6 rounded-card shadow-lg"
+                  variants={stagger}
+                  initial="initial"
+                  whileInView="whileInView"
+                  viewport={{ once: true }}
+                >
+                  <ul className="space-y-4">
+                    {learningPoints.map((point, index) => (
+                      <motion.li
+                        variants={stagger}
+                        className="flex items-start"
+                        key={index}
+                      >
+                        <span className="text-primary-600 mr-2">✓</span>
+                        {point}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -182,66 +251,6 @@ function App() {
             >
               Quero fazer parte da Mentoria
             </motion.button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Results Section */}
-      <section className="py-section bg-white">
-        <div className="container">
-          <motion.div
-            className="max-w-7xl mx-auto"
-            variants={fadeInUp}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true }}
-          >
-            <h2 className="text-heading-2 font-bold text-center mb-12">
-              Sobre o seu professor
-            </h2>
-
-            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16">
-              <motion.div
-                className="w-full md:w-2/5 relative"
-                variants={scaleIn}
-              >
-                <div className="absolute inset-0 bg-gradient-to-b from-primary-500/10 to-transparent rounded-3xl -z-10" />
-                <img
-                  src="/jordan-pic.png"
-                  alt="Foto profissional em traje social"
-                  className="w-full h-full object-contain md:scale-110 md:-translate-y-6"
-                />
-              </motion.div>
-
-              <div className="w-full md:w-3/5">
-                <motion.h4
-                  className="text-heading-4 font-bold mb-6 text-primary-800"
-                  variants={fadeInUp}
-                >
-                  O que você vai aprender comigo:
-                </motion.h4>
-                <motion.div
-                  className="bg-secondary-50 p-6 rounded-card shadow-lg"
-                  variants={stagger}
-                  initial="initial"
-                  whileInView="whileInView"
-                  viewport={{ once: true }}
-                >
-                  <ul className="space-y-4">
-                    {learningPoints.map((point, index) => (
-                      <motion.li
-                        variants={stagger}
-                        className="flex items-start"
-                        key={index}
-                      >
-                        <span className="text-primary-600 mr-2">✓</span>
-                        {point}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </motion.div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
