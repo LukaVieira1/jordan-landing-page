@@ -222,7 +222,9 @@ function App() {
                   Combo Completo
                 </h3>
                 <p className="text-body-lg mb-6">
-                  E-book + Curso com condições especiais
+                  Um combo com uma condição especial, onde você terá acesso ao
+                  e-book + curso, com acesso vitalício, e um canal de
+                  comunicação comigo, de forma exclusiva.
                 </p>
               </div>
               <button className="w-full bg-primary-600 text-white py-3 rounded-lg hover:bg-primary-700 transition-colors">
