@@ -37,3 +37,11 @@
 - About section
 - result points section
 - Created Button component
+
+## 0.5.0 - 2025-01-08
+
+## Changed
+
+- FavIcon
+- Title
+- Jordans Auto Consultoria text size
