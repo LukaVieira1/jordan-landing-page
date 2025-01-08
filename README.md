@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# Jordan Auto Consulting
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Jordan Auto Consulting](public/jordan-pic.png)
 
-Currently, two official plugins are available:
+Landing page developed for Jordan Auto Consulting, specialized in automotive repair shop management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies
 
-## Expanding the ESLint configuration
+This project was built with the following technologies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
+- Vite
 
-- Configure the top-level `parserOptions` property like this:
+## 💻 Project
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+A landing page designed to showcase automotive consulting services, including:
+
+- One-on-one mentoring
+- E-book
+- Online course
+- Complete bundle
+
+### ✨ Features
+
+- Responsive design
+- Smooth animations
+- Floating WhatsApp button
+- Social media integration
+- Organized content sections
+
+## 🔧 Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/your-username/jordan-auto-consulting
+
+# Navigate to project folder
+cd jordan-auto-consulting
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎨 Design System
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+The layout was developed focusing on user experience, featuring:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Brand colors
+- Modern typography
+- Proper spacing
+- Clear visual hierarchy
+
+## 📱 Mobile First
+
+The application follows the Mobile First concept, ensuring a consistent experience across all devices.
