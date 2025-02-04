@@ -275,7 +275,7 @@ function App() {
               variant="primary"
               size="lg"
               onClick={() =>
-                window.open("https://wa.me/5553999472393", "_blank")
+                window.open("https://wa.me/555399471393", "_blank")
               }
             >
               Quero fazer parte da Mentoria
